@@ -1,0 +1,93 @@
+:root{
+    --correct: #538d4e;
+    --present: #b59f3b;
+    --wrong: #3a3a3c;
+    --button-colour: rgb(159, 159, 159);
+    --button-hover: rgb(223, 223, 223);
+    --button-active: rgb(77, 77, 77);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container > div{
+    display: flex;
+}
+
+.container p{
+    width: clamp(45px, 12vw, 60px);
+    height: clamp(45px, 12vw, 60px);
+    font-size: clamp(20px, 5vw, 25px);
+    border: 2px solid rgb(159, 159, 159);
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.li{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lip{
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--button-colour);
+    align-items: center;
+    margin:0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.lip:hover{
+    background-color: var(--button-hover);
+}
+.lip:active{
+    background-color: var(--button-active);
+}
+
+#enter{
+    font-size: 20px;
+}
+
+@media (max-width: 400px){
+    .container p{
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .lip{
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    #enter{
+    font-size: 9px;
+    }
+} 
+
+#title{
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 0px;
+    border-radius: 10px;
+    background-color:darkgrey;
+}
